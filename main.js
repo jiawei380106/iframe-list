@@ -28,6 +28,12 @@ var app = new Vue({
         url: this.newUrl
       };
       this.videos.push(obj);
+    },
+
+    deleteVideo: function(n) {
+      console.log("Deleting video");
+      this.videos.splice(n, 1);
+      //this.videos.slice(this.videos.title);
     }
   }
 });
